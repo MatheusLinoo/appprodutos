@@ -18,6 +18,8 @@
 #     username: sa
 #     password:
 
+# Tomei a liberdade de trocar para PostgreSQL por ter mais familiaridade com ele.
+
 spring:
   application:
     name: AppProdutos
@@ -25,7 +27,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/appprodutos
     username: postgres
-    password: friends25th
+    password: ${DATASOURCE_PASSWORD}
     driver-class-name: org.postgresql.Driver
 
   jpa:
